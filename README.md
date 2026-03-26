@@ -1,6 +1,6 @@
-# Claude Code Plugins & Configuration
+# ⚡ Claude Code Plugins & Configuration
 
-## Prompting Strategy
+## 🧠 Prompting Strategy
 
 To get a proper design from Claude, you must always provide three things:
 
@@ -12,9 +12,9 @@ If any of these are missing, Claude will guess — and guessing leads to rework.
 
 ---
 
-## Plugins
+## 🔌 Plugins
 
-### Core Plugins
+### 🎯 Core Plugins
 
 | Plugin | Description | Why We Use It |
 |--------|------------|---------------|
@@ -22,7 +22,7 @@ If any of these are missing, Claude will guess — and guessing leads to rework.
 | **playwright** | Playwright MCP browser automation | E2E testing, live site verification, form filling, screenshots. Lets Claude interact with real browsers |
 | **context7** | Live library documentation lookup | Fetches up-to-date docs for any library. No more hallucinated APIs |
 
-## Code Quality
+### ✅ Code Quality
 
 | Plugin | Description | Why We Use It |
 |--------|------------|---------------|
@@ -30,7 +30,7 @@ If any of these are missing, Claude will guess — and guessing leads to rework.
 | **code-simplifier** | Code cleanup & simplification | Refines recently changed code for clarity and maintainability |
 | **claude-md-management** | CLAUDE.md file management | Audits and improves project instruction files |
 
-## Development Tools
+### 🛠️ Development Tools
 
 | Plugin | Description | Why We Use It |
 |--------|------------|---------------|
@@ -40,7 +40,7 @@ If any of these are missing, Claude will guess — and guessing leads to rework.
 | **swift-lsp** | Swift Language Server | For Swift/iOS projects |
 | **rust-analyzer-lsp** | Rust Language Server | For Rust projects |
 
-## Installation
+## 📦 Installation
 
 ```bash
 # Install all plugins in Claude Code
@@ -57,9 +57,9 @@ If any of these are missing, Claude will guess — and guessing leads to rework.
 /install-plugin rust-analyzer-lsp
 ```
 
-## How We Actually Use These
+## 🚀 How We Actually Use These
 
-### Playwright MCP — Live Server Testing
+### 🎭 Playwright MCP — Live Server Testing
 
 The single most impactful plugin. After deploying code, Claude can:
 
@@ -72,7 +72,7 @@ The single most impactful plugin. After deploying code, Claude can:
 
 **Example from today**: Connected to Onix backoffice → changed agent settings from Seamless to Transfer mode → verified game URLs are returned — all without leaving the terminal.
 
-### Superpowers — Structured Development
+### 💪 Superpowers — Structured Development
 
 Instead of jumping straight to code, superpowers enforces discipline:
 
@@ -82,18 +82,18 @@ Instead of jumping straight to code, superpowers enforces discipline:
 - `verification-before-completion` — Run checks before claiming done
 - `code-review` — Review against plan after major milestones
 
-### Context7 — Always Current Docs
+### 📚 Context7 — Always Current Docs
 
 When using a library, Context7 fetches the latest documentation so Claude never hallucinates deprecated APIs or wrong parameter names.
 
-### Ralph Loop — Continuous Implementation
+### 🔄 Ralph Loop — Continuous Implementation
 
 For complex features, sets up a recurring loop:
 ```
 /ralph-loop 5m "implement feature X, run tests, fix failures"
 ```
 
-## Recommended Permission Settings
+## 🔒 Recommended Permission Settings
 
 ```jsonc
 // ~/.claude/settings.json
@@ -120,7 +120,7 @@ For complex features, sets up a recurring loop:
 }
 ```
 
-## Tips
+## 💡 Tips
 
 - **Playwright + SSH**: Claude can SSH into servers, deploy code, then immediately verify via browser. Full CI/CD in one conversation.
 - **Superpowers is non-negotiable**: The brainstorming and planning skills save more time than they cost. Skip them and you'll rewrite.
