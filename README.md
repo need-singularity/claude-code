@@ -1,8 +1,20 @@
 # Claude Code Plugins & Configuration
 
-A curated list of Claude Code plugins we use daily for full-stack development, E2E testing, and DevOps automation.
+## Prompting Strategy
 
-## Core Plugins
+To get a proper design from Claude, you must always provide three things:
+
+1. **Purpose** — Why you're building it. The problem to solve, the goal to achieve.
+2. **Context** — What the situation is. Tech stack, existing systems, constraints, users.
+3. **Structure** — What shape it takes. Desired architecture, file organization, data flow.
+
+If any of these are missing, Claude will guess — and guessing leads to rework.
+
+---
+
+## Plugins
+
+### Core Plugins
 
 | Plugin | Description | Why We Use It |
 |--------|------------|---------------|
