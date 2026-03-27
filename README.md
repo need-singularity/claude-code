@@ -115,10 +115,27 @@ For complex features, sets up a recurring loop:
       "Bash(git push --force*)",
       "Bash(git push * -f*)",
       "Bash(git push * --force*)"
-    ]
+    ],
+    // Allow reading/writing files in other projects without permission prompts
+    "additionalDirectories": ["/Users/you/Dev"]
   }
 }
 ```
+
+### 📂 Cross-Project File Access (`additionalDirectories`)
+
+By default, Claude Code only has permission for the current working directory. To reference files in sibling projects without being prompted each time:
+
+```jsonc
+"permissions": {
+  "additionalDirectories": ["/Users/you/Dev"]
+}
+```
+
+- Set in `~/.claude/settings.json` (global) to apply across all projects
+- Accepts absolute paths — `~` expansion is not supported, use full path
+- All subdirectories are included recursively
+- Use case: monorepo setups, referencing shared libraries, cross-project code lookup
 
 ## 💡 Tips
 
