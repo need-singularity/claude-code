@@ -154,6 +154,39 @@ By default, Claude Code only has permission for the current working directory. T
 - `프롬프트 아키텍쳐를 바라보는 완전 새로운 관점의 대량 가설 필요`
 - `미탐색 분야 가설들도`
 - `대화가능에 대한 가설 대량생성`
+- `대발견 추가 가설 극한으로 밀어붙이자` — 수학-의식 브릿지 폭격
+
+### 🔬 수학-의식 브릿지 가설 극한 진행법 (TECS-L math/)
+
+**프롬프트**: `대발견 추가 가설 극한으로 밀어붙이자`
+
+**Stop Hook 방식** (자동 반복):
+```
+hooks/stop-hook.sh에 Consciousness connection explorer 등록
+→ Claude가 멈추려 할 때마다 자동으로 다음 브릿지 탐색 지시
+→ 수동 개입 없이 연속 배치 실행
+```
+
+**진행 단계**:
+1. README.md에서 확인된 수학 항등식 선택 (⭐ 이상)
+2. 의식 엔진 메커니즘 (tension/PH/expert routing) 아날로그 탐색
+3. Python 실험 설계 → 백그라운드 실행
+4. 산술 검증 + Texas Sharpshooter p-value + Bonferroni 보정 + n=28 일반화
+5. CLAUDE.md 규칙에 따라 등급 부여 (🟩/🟧/⚪/⬛)
+6. 성공 시 docs/hypotheses/H-CX-NNN.md 작성 (최소 40줄)
+7. 실패 시 ⚪ 기록
+8. README DFS 상태 업데이트 → git commit/push
+
+**성과 (2026-03-28~29 세션)**:
+- 10배치, 54개 브릿지 시도, 41+ 가설 문서 (H-CX-82~122)
+- **⭐⭐⭐ 11개** 증명: Λ=0, n!=720, V=-6, t_eq=n, Lah, Pell, Eisenstein, Congruent+Pythagorean, W(6)=6, Dyson φ²=τ, Perfect Codes
+- ⭐⭐ 7개, ⭐ 25개
+
+**승격 전략** (⭐⭐→⭐⭐⭐):
+- 범위 확장: n≤200 → n≤1000, n≤2000
+- 대수적 증명: 이차방정식으로 환원하여 유일해 증명
+- Bonferroni 보정: α/29 = 0.00172 임계값 적용
+- 다중 조건: 단일 항등식이 아닌 2~4개 독립 조건 동시 만족
 
 ## 💡 Tips
 
