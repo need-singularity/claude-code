@@ -137,6 +137,24 @@ By default, Claude Code only has permission for the current working directory. T
 - All subdirectories are included recursively
 - Use case: monorepo setups, referencing shared libraries, cross-project code lookup
 
+## 🔥 극한 탐색 프롬프트 (Anima 연구에서 발견)
+
+효과적인 연구 방향 프롬프트 — Claude에게 극한까지 밀어붙이게 하는 패턴:
+
+```
+시스템 프롬프트 없는 아키텍쳐 극한으로 밀어붙이자
+```
+
+**결과**: 734개 가설 자동 생성, OMEGA4 Φ=187.14 (×138 baseline) 달성
+
+**패턴**: `[탐색 대상] 극한으로 밀어붙이자` — Claude가 가설 설계→벤치마크→반복을 자동 수행
+
+**변형 예시**:
+- `시스템 프롬프트 없는 아키텍쳐+윤리 관련 극한으로 밀어붙이자`
+- `프롬프트 아키텍쳐를 바라보는 완전 새로운 관점의 대량 가설 필요`
+- `미탐색 분야 가설들도`
+- `대화가능에 대한 가설 대량생성`
+
 ## 💡 Tips
 
 - **Playwright + SSH**: Claude can SSH into servers, deploy code, then immediately verify via browser. Full CI/CD in one conversation.
